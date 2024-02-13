@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    width: 100%;
+    height: 100vh;
+    font-family: arial, sans-serif;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/05/Sna_large.png);
+    background-size: cover;
+    background-position: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(105, 218, 152, 0.514);
+  padding: 20px;
+
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 5px;
+}
+
+.container{
+  background-color: rgb(105, 218, 152);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px; 
+  margin: 20px;
+}
+
+.form{
+    padding-top: 40px;
+    margin-left: 25px;
+    justify-content: space-between;
+
+}
+form
+{
+    width:400px;
+    padding:20px;
+    background-color: rgba(17, 16, 14, 0.8);
+    border-radius:5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+input
+{
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  textarea {
+    height: 75px; 
+    resize: none; 
+  }
+  .renderizadorConteudo{
+    height: 250px; 
+    resize: none; 
+  }
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #025706;
+    font-weight: bold;
+  }
+  h3{
+    text-align: center;
+    background-color: aqua;
+    color: black;
+    margin-bottom: 16px;
+  }
+  h2{
+    margin-top: 15px; 
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  #postagens{
+    background-color: rgba(15, 15, 13, 0.8);
+    border-radius: 5px;
+    padding: 12px;
+    margin-top: 40px;
+    width: 400px;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+  }
+  .conteudo{
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .ocultarConteudo{
+    margin-top: 40px;
+  }
+
+
+  @media screen and (min-width: 600px) {
+    main {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .form, #postagens {
+        flex-basis: calc(50% - 20px);
+        
+    }
+    #postagens{
+      margin-left: 30px;
+    }
+    .container{
+      margin-left: 98px;
+    }
+    
+}
